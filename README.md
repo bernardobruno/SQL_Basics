@@ -94,6 +94,30 @@ WHERE Country='Germany' AND (City='Berlin' OR City='München');
 SELECT * FROM Customers
 WHERE NOT Country='Germany' AND NOT Country='USA';
 
+###The SQL ORDER BY Keyword
+
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+
+SELECT * FROM Customers
+ORDER BY Country;
+
+SELECT * FROM Customers
+ORDER BY Country DESC;
+
+
+###The SQL INSERT INTO Statement
+
+The INSERT INTO statement is used to insert new records in a table.
+
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+###The SQL UPDATE Statement
+
+The UPDATE statement is used to modify the existing records in a table.
+
 --*--
 
 Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
